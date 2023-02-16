@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia Bootstrap</title>
+
+    <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- <link href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"> -->
+</head>
+
+<body>
+
+
+    <!-- Formas de integrar Boostrap a mi documento HTML 
+
+    1. Usando el CDN (Content Delivery Network) donde hacemos una referencia al link del servidor de Boostrap para tomar esos estilos y usarlos.
+
+    2. Usando el archivo de la seccion "Download" y agregandolo como si fuera una carpeta de assets
+-->
+
+
+    <!-- Caracterticas fundamentales de Boostrap
+
+    - Mobile first
+    - Grid responsive
+    - Componentes reutilizables
+    - Containers
+
+-->
+
+
+    <!-- TODO lo que usamos con Boostrap, debe ir entre contenedores (div) 
+    El Grid o la grilla debe ir siempre dentro de un div
+    Para declarar filas, usamos la palabra row
+    Para declarar columnas, usamos la palabra column
+    Utilizamos 12 columnas, si nos pasamos de estas 12, se agrega hacia abajo
+-->
+
+    <div class="container">
+        <h1>Cartel 14 de Febrero</h1>
+    </div>
+
+    <!-- Grid de 12 columnas -->
+
+    <div class="container" id="pregunta"> <!--  Div padre para container-->
+
+        <div class="row"> <!--  Div hijo para la fila -->
+
+            <div class="col-12 border">
+                <p>Quieres ser mi novia?</p>
+            </div><!-- Div hijo para la columna 1 -->
+        </div>
+
+        <div class="col-12 border">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/iamgen3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/imagen1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/imagen2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="ventajas">
+            <div class="row">
+                <div class="col-6 border">
+                    <p>Ventajas</p>
+                    <!-- Modal -->
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Conoce las ventajas de salir conmigo
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Me gusta programar en Java</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 border">
+                    <p>Desventajas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Conoce las desventajas de salir conmigo
+                    </button>
+
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Ninguna </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor imagen perrito y verso o poema -->
+        <div class="container" id="poema">
+            <div class="row">
+                <div class="col-4 border">
+                    <p>Perrito awo</p>
+                </div>
+                <div class="col-8 border">
+                    <p>Poema Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur nam neque ipsam
+                        earum
+                        temporibus porro.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeria de Imagenes -->
+        <div class="container" id="galera">
+            <div class="row border">
+                <div class="col-4 border">
+                    <p>Imagen1</p>
+                </div>
+                <div class="col-4 border">
+                    <p>Imagen2</p>
+                </div>
+                <div class="col-4 border">
+                    <p>Imagen3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pregunta">
+            <div class="row">
+                <div class="col-12 border">
+                    <p>Qué decides?</p>
+                    <label for="respuesta">Sí</label>
+                    <input type="radio" name="respuesta">
+                    <label for="respuesta">Sí</label>
+                    <input type="radio" name="respuesta">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pregunta">
+            <div class="row">
+                <div class="col-8 border">
+                    <p>Transferencia</p>
+                </div>
+                <div class="col-4 border">
+                    <p>Link de Musica</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pregunta">
+            <div class="row">
+                <div class="col-12 border">
+                    <p>Footer</p>
+<!-- Formulario de Contacto -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Funcionalidades -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
